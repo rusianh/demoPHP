@@ -181,5 +181,5 @@ foreach($age as $x => $val) {
   echo "$x = $val<br>";
 }
 
-
+//Dung return: https://daynhauhoc.com/t/return-trong-function-php/12860
 ?>
