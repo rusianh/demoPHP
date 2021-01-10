@@ -181,5 +181,19 @@ foreach($age as $x => $val) {
   echo "$x = $val<br>";
 }
 
+//------------------------------------------------------------------------
+//Bài 11: Phương thức $_GET, $_POST trong PHP
+
+// Phương thức GET tạo ra một chuỗi ký tự dài nhất xuất hiện trong server log của bạn, trong location: box của trình duyệt.
+//Được giới hạn gửi tối đa 1024 ký tự
+//Không bao giờ sử dụng phương thức GET nếu gửi password hoặc thông tin nhạy cảm lên server 
+//GET không thể gui dữ liệu nhị phân, vi dụ như hình ảnh hoặc tài liệu lên word lên server
+//Sử dụng biến global $_GET để lấy dữ liệu
+
+//-----------------------
+//phương thức POST không có bát kỳ hạn chế nào về kích thước dữ liệu sẽ gửi
+//có thể sử dụng để dữ liệu nhị  phân
+// dữ liệu đc gửi bởi phương thức POST thông qua HTTP header, vì vậy việc bảo mật phụ thuộc vào giao thức HTTP. Bằng việc sử dụng Secure HTTP, bạn có thể chắc chắn rằng thông tin của mình là an toàn.
+// Sử dụng biến global $_POST để lấy dữ liệu
 
 ?>
