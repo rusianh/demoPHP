@@ -195,5 +195,5 @@ foreach($age as $x => $val) {
 //có thể sử dụng để dữ liệu nhị  phân
 // dữ liệu đc gửi bởi phương thức POST thông qua HTTP header, vì vậy việc bảo mật phụ thuộc vào giao thức HTTP. Bằng việc sử dụng Secure HTTP, bạn có thể chắc chắn rằng thông tin của mình là an toàn.
 // Sử dụng biến global $_POST để lấy dữ liệu
-
+$_GET
 ?>
