@@ -181,7 +181,6 @@ foreach($age as $x => $val) {
   echo "$x = $val<br>";
 }
 
-<<<<<<< HEAD
 //------------------------------------------------------------------------
 //Bài 11: Phương thức $_GET, $_POST trong PHP
 
@@ -197,7 +196,5 @@ foreach($age as $x => $val) {
 // dữ liệu đc gửi bởi phương thức POST thông qua HTTP header, vì vậy việc bảo mật phụ thuộc vào giao thức HTTP. Bằng việc sử dụng Secure HTTP, bạn có thể chắc chắn rằng thông tin của mình là an toàn.
 // Sử dụng biến global $_POST để lấy dữ liệu
 $_GET
-=======
 //Dung return: https://daynhauhoc.com/t/return-trong-function-php/12860
->>>>>>> 40a8cae012ff156a3889f302b70461d52e67df77
 ?>
