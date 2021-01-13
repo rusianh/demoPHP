@@ -19,6 +19,14 @@ your result should look the same as multiplication_end.png
 <table>
     <?php
         //YOUR CODE GOES HERE
+        for($i=0; $i<13; $i++){
+            if($i==0){
+                echo "<tr>";
+                for($j=0;$j<13; $j++){
+                    echo "th"
+                }
+            }
+        }
     ?>
 </table>
 </body>
