@@ -4,13 +4,26 @@
     <meta name="viewport" content="width=<br<, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script type="text/javascript">
+    function check() {
+        var ten = document.getElementById("tencuaban").value;
+        var tuoi = document.getElementById("tuoicuaban").value;
+       // var t = eval(tuoi);
+        if (tuoi > 0 ) {
+            alert("ok");
+            form1.submit();
+        } else {
+            alert("ban nhap sai tuoi");
+        }
+    }
+</script>
 <body>
     <br/>
-    <form action="getDatademo4.php" method="get">
+    <form action="getDatademo4.php" method="get" name="form1">
     <h1> form nhap thong tin </h1>
-    &nbsp;&nbsp;&nbsp;&nbsp; Nhap ten: <input type="text" name="tencuaban" /> </br>
-    &nbsp;&nbsp;&nbsp;&nbsp; Nhap tuoi: <input type="number" name="tuoicuaban"/> </br>
-    <input type="submit" value="submit data"/>
+    &nbsp;&nbsp;&nbsp;&nbsp; Nhap ten: <input type="text" name="tencuaban" id="tencuaban" /> </br>
+    &nbsp;&nbsp;&nbsp;&nbsp; Nhap tuoi: <input type="number" name="tuoicuaban" id="tuoicuaban"/> </br>
+    <input type="button" value="submit data" onclick="check()"/>
     </form>
 </body>
 </html>
