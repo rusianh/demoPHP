@@ -4,10 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script>
+    function check() {
+        var socuaban = document.getElementById("sonhap").value;
+            for(i = 2; i < socuaban; i++) {
+                if (socuaban % i == 0) {
+                    alert ("so" + socuaban + "khong phai la so nt");
+                } else {
+                    alert ("so" + socuaban + " la so nt");
+                    form1.submit();
+                }
+            }
+    }
+</script>
 <body>
-    <br action="getdataprime.php" method="get" name="form1">
+    <br/>
+    <form action="getdataprime.php" method="get" name="form1">
     <h1>Nhập thông tin</h1>
-    &nbsp;&nbsp;&nbsp;&nbsp; Nhâp số: <input type="text" name="sonhap"> </br>
+    &nbsp;&nbsp;&nbsp;&nbsp; Nhâp số: <input type="number" id="sonhap"> 
     <input type="button" value="submit data" onclick="check()"/>
     </form>
 </body>
