@@ -197,4 +197,17 @@ foreach($age as $x => $val) {
 // Sử dụng biến global $_POST để lấy dữ liệu
 $_GET
 //Dung return: https://daynhauhoc.com/t/return-trong-function-php/12860
+
+//Bài 12: ví dụ GET và POST
+//----------------------------------------------------------
+//Bài 13: Làm việc với get và post
+//Dùng biến gloable $_GET, $_POST hoặc $_REQUEST để lấy dữ liệu gửi lên.
+$_GET["tên field"]
+$_POST["tên field"]
+$_REQUEST["tên field"]
+
+//lưu ý dùng hàm isset để kiểm tra tên dữ liệu có tồn tại hay không
+if(isset($_GET["name"])) {// Hàm isset trả về true hoặc false
+    //kiem tra phan tử name có tồn tại trong biến $_GET không đã rồi mới thực hiện code tiếp
+}
 ?>
