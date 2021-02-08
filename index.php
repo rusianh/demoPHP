@@ -210,4 +210,9 @@ $_REQUEST["tên field"]
 if(isset($_GET["name"])) {// Hàm isset trả về true hoặc false
     //kiem tra phan tử name có tồn tại trong biến $_GET không đã rồi mới thực hiện code tiếp
 }
+
+
+//---------------------------------------------------------------
+//Bài 15: cookie va session: Dùng quản lý các phiên làm việc===> chức năng lưu trữ dữ liệu ===> Lưu trữ một dữ liệu nhỏ
+//
 ?>
