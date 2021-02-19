@@ -1,0 +1,11 @@
+BookCode,Title,Author,Edition,RatePurchased,PurchaseDate,VendorName,BookStatus
+217021997-8,Hanging Up,Doll Levitt,2,22.15,2018-05-02 21:22:48,Torp-Gerlach,available
+644946024-5,Molokai (Molokai: The Story of Father Damien),Thorvald Feak,3,42.35,2018-11-29 06:22:47,Rohan-Koch,unavailable
+745231073-X,Deciduous Tree (Tree Without Leaves) (Rakuyôju),Kassia Zanioletti,1,79.09,2018-11-07 12:13:07,"Fay, Yost and Kutch",available
+113796330-1,Hotline,Jareb Mathivet,1,118.62,2018-07-02 14:25:57,Stoltenberg Group,unavailable
+032971736-7,Ganes,Sallyann Deelay,4,122.66,2018-10-09 07:17:23,Mosciski Group,unavailable
+573174152-2,Genius Within: The Inner Life of Glenn Gould,Goraud Tansey,4,53.46,2018-06-16 03:54:19,"Wisozk, MacGyver and Beahan",unavailable
+005066888-9,"Specialist, The",Ethel Warratt,1,20.09,2018-04-16 14:04:01,Rutherford-Hegmann,available
+958296182-1,Toy Story That Time Forgot,Nikki Forbear,4,112.40,2018-07-31 04:06:27,"Hartmann, Pfannerstill and Pfeffer",unavailable
+472943950-3,"Human Experience, The",Tann Assender,4,11.51,2018-09-12 18:26:31,"McDermott, Waelchi and Lehner",available
+232683124-1,"Golden Coach, The (Le carrosse d'or)",Pauli Harwick,4,49.97,2018-10-08 09:42:50,"Weissnat, Bosco and Jacobs",unavailable

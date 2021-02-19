@@ -1,0 +1,11 @@
+EmpId,FirstName,LastName,Address,PhoneNumber,DeptId,Designation,Salary,JoinDate,PerformanceRating
+emp16724,Darice,Barnwill,714 Mandrake Pass,(810) 6225797,3,Dental Hygienist,$73772.49,2016-04-26 06:48:30,4
+emp62694,Elberta,Dawnay,613 Center Avenue,(240) 5020490,4,Physical Therapy Assistant,$38120.44,2000-07-27 10:09:38,3
+emp75112,Morgen,Pretley,810 Eagan Road,(790) 9449904,1,Geological Engineer,$26628.62,2012-11-20 18:24:51,3
+emp66309,Koenraad,Guswell,642 Melody Road,(315) 7470042,5,Sales Representative,$82843.20,1991-12-06 16:51:17,5
+emp47007,Rosemary,Langlais,139 Crest Line Hill,(593) 2256763,4,Dental Hygienist,$76846.01,2012-05-21 10:35:18,3
+emp77189,Minnnie,Addionizio,55 Bellgrove Street,(511) 5393669,5,Computer Systems Analyst I,$93500.87,2011-11-16 14:30:51,1
+emp64854,Forester,Fraczek,64 Cottonwood Trail,(284) 2365092,3,Tax Accountant,$20670.69,1993-09-22 20:10:12,3
+emp92893,Jenifer,Kuban,33 Del Mar Avenue,(506) 6823676,1,Budget/Accounting Analyst II,$82134.50,2005-08-30 12:04:58,4
+emp78201,Zorah,Avard,9 Reindahl Point,(246) 9585448,3,Information Systems Manager,$64710.35,1996-11-20 12:40:57,5
+emp42390,Fransisco,Rutter,7838 Memorial Hill,(553) 5463432,3,Office Assistant I,$95449.50,2006-10-05 08:08:16,2

@@ -1,0 +1,11 @@
+ProductCode,Name,Category,Manufacturer,AgeRange,UnitPrice,NetWeight,QtyOnHand
+TU05399,Cookie - Dough Variety,Cards,"Ferry, Fritsch and O'Conner",3-5,$21.17,478,171
+TU89128,Bandage - Finger Cots,Cards,Stokes Inc,1-3,$10.75,483,2902
+TU02414,Wine - Puligny Montrachet A.,Cards,"Ryan, Bashirian and Hand",0-1,$10.34,478,2587
+TU39674,Tomato - Peeled Italian Canned,Cards,Wuckert Group,5-12,$32.02,350,2785
+TU70939,Cheese - Camembert,Board games,Padberg Group,5-12,$19.66,587,492
+TU05718,Bananas,Board games,Herzog LLC,3-5,$5.70,652,2037
+TU61396,Calypso - Lemonade,Puzzles,Wyman and Sons,5-12,$7.24,748,3900
+TU59766,Rice - Jasmine Sented,Puzzles,"Kris, O'Conner and Heathcote",0-1,$25.73,257,3184
+TU65253,"Salmon - Smoked, Sliced",Robot,"Runte, Littel and Pagac",1-3,$14.18,444,3954
+TU56557,Truffle - Whole Black Peeled,Cards,"Heathcote, Wilkinson and Kris",5-12,$41.61,725,4257
