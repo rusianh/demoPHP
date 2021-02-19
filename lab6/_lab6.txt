@@ -1,0 +1,16 @@
+for each of the following tables, create index.php to view all and new.php to insert a new item
+
+table Subject (
+	subjectID auto_increment primary key
+	name varchar not null
+	duration int not null (#hours)
+	level varchar not null (beginner, intermediate, advanced --> drop down in html)
+)
+
+table Teacher (
+	teacherID auto_increment primary key
+	name varchar not null
+	dob date not not
+	ssID varchar(11) (exactly 11 digits, must start with 00 or 01 or 10 or 11
+						the next 4 digits are year of birth and month of birth`)
+)
