@@ -16,7 +16,7 @@ $port="3306";
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 60%;
 }
 
 td, th {
@@ -32,30 +32,38 @@ tr:nth-child(even) {
 </head>
 <body>
 
-    <h2>Danh sách sản phẩm </h2> 
+    
 
-<table width="80%">
+<table align="center">
+    <tr>
+        <td colspan="6"><h2>Danh sách sản phẩm </h2> </td>
+    </tr>
+    
   <tr>
     <th>ID</th>
     <th>ProductID</th>
     <th>Name</th>
     <th>Price</th>
     <th>Status</th>
+    <th>Hành động</th>
   </tr>
   
   <?php   
     $conn = new PDO("mysql:host=$host;port=$port;dbname=$dbname;charset=utf8", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);                                             
 
-    $stmt = $conn->prepare("Select * from product");
+    $stmt = $conn->prepare("Select * from product order by Id desc");
     $stmt->execute();
-
-
     $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+   
+  ?>
 
-    
+ <?php  
     $i=0;
-   foreach($stmt->fetchAll() as $k=>$v)
+    
+    $result=$stmt->fetchAll();  
+    
+   foreach($result as $k=>$v)
    {
        global $i;
        $i++;
@@ -66,18 +74,19 @@ tr:nth-child(even) {
           <td><?php echo $v["Name"]; ?></td>
           <td><?php echo $v["Price"]; ?></td>
           <td><?php echo $v["Status"]; ?></td>                    
+          
+          <td><a href="/phpproject1/product_edit.php?Id=<?php echo $v["Id"]; ?>">Edit</a> | <a href="/phpproject1/product_delete.php?Id=<?php echo $v["Id"]; ?>"> Delete <a/></td>
         </tr>
   <?php
   }
   ?>
   
-  
+  <tr>
+        <td style="text-align:right" colspan="6"> <a href="/phpproject1/product.php">Quay trở lại </a> </td>
+    </tr>
  
- n</table>
-<div>
-    <br/>
-    <a href="/phpproject1/product.php">Quay trở lại </a>
-</div>
+</table>
+
 
 </body>
 </html>

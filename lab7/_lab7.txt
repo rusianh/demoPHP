@@ -1,0 +1,36 @@
+for each of the following tables, create 
+1-index.php to view all  
+2-new.php to insert a new item
+3-edit.php to update an item
+4-delete.php to delete an item
+
+use 1808g;
+
+table Subject (
+	subjectID auto_increment primary key
+	name varchar not null
+	duration int not null (#hours)
+	level varchar not null (beginner, intermediate, advanced --> drop down in html)
+)
+
+table Teacher (
+	teacherID auto_increment primary key
+	name varchar not null
+	dob date not null
+	ssID varchar(11) (exactly 11 digits, must start with 00 or 01 or 10 or 11
+						the next 4 digits are year of birth and month of birth`)
+)
+
+
+table Employee (
+	empID auto_increment primary key
+	name varchar not null
+	dob date not not
+	experience int not null (#working years)
+	salary float not null (million VND, 
+		<3 years, 3m - 5m
+		3< <5 years, 5m- 9m
+		5< <10 years, >10m
+		>10 years, negotiable (any number)
+	) 
+)

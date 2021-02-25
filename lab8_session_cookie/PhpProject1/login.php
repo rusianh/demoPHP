@@ -1,7 +1,3 @@
-<?php 
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +35,7 @@
 </head>
 <body>
 <div class="login-form">
-    <form action="http://aptech.com:83/demoPHP/lab06_mr_lvt/PhpProject1/kiemtra.php" method="post">
+    <form action="/PhpProject1/kiemtra.php" method="post">
         <h2 class="text-center">Đăng nhập</h2>       
         <div class="form-group">
             <input type="text" name="fname" class="form-control" placeholder="Username" required="required">

@@ -2,13 +2,13 @@
 
 function redirect($url, $statusCode = 303)
 {
-   header("Location: ".$url, true, $statusCode);
-   exit();
+   header('Location: ' . $url, true, $statusCode);
+   die();
 }
-
 
 if(isset($_POST['fname']) && isset($_POST['fpassword']))
     {    
+            session_start();
             $userInfo = array("Tien|123|admin","MrA|4|user");
             $uname=$_POST['fname'];
             $upass=$_POST['fpassword'];
@@ -26,12 +26,20 @@ if(isset($_POST['fname']) && isset($_POST['fpassword']))
                 if(($uname==$u) && ($upass==$p))
                 {
                     $enableLogin=true;
+                    
+                    $_SESSION["username"]=$u;
+                    $_SESSION["enableLogin"]=$enableLogin;
+                                        
+                    $d=date("Y-m-d H:i:s");
+                    
+                    setcookie("lastacc", $d, time() + (86400 * 30), "/"); // 86400 = 1 day
+                    setcookie("theme", "white", time() + (86400 * 30), "/"); // 86400 = 1 day
                 }       
             }
           
             if($enableLogin)
             {                            
-                redirect("http://aptech.com:83/demoPHP/lab06_mr_lvt/PhpProject1/product.php");
+                redirect("http://localhost:8087/PhpProject1/product.php");
             }
             else
             {

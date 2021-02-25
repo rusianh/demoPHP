@@ -1,6 +1,5 @@
 <?php 
-#lấy thông tin trên các trường của form cho vào mảng data
-#
+
 function redirect($url, $statusCode = 303)
 {
    header('Location: ' . $url, true, $statusCode);
@@ -44,35 +43,29 @@ $fproduct = $_POST["fproduct"];
         $dname=(string) $data['fnameproduct'];
         $dprice=(float) $data['fprice'];
         $dstatus=(string) $fproduct;
-        
-        
+                
         $host="35.229.164.85";
         $username="lvtien";
         $password="Tien1234@";
         $dbname="Test";
         $port="3306";    
+        
+        
+        
     
 //         try {
                 $conn = new PDO("mysql:host=$host;port=$port;dbname=$dbname;charset=utf8", $username, $password);
-                #khởi tạo một kết nối tới database với các thông tin host username dbname port
-                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);               
-                #thông báo lỗi: set chế độ khi gặp trục trặc với data base                              
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);                                             
                                 
                 //$sql = "insert into product values($did,'$dname','$dprice','$dstatus');";
-                #sql injection
-                
                 
                 $stmt = $conn->prepare("INSERT INTO Product (Id,Name,Price,Status) VALUES (:Id, :Name, :Price, :Status)");
-                #chuẩn bị kết nối
                 $stmt->bindParam(':Id', $did);
                 $stmt->bindParam(':Name', $dname);
                 $stmt->bindParam(':Price', $dprice);
                 $stmt->bindParam(':Status', $dstatus);                               
                 
                 $stmt->execute();
-                //thực hiện lệnh trong sql
-                $conn = null;
-
                 echo "New record created successfully";
                 redirect("http://localhost:8087/PhpProject1/product_list.php");
 
@@ -84,6 +77,7 @@ $fproduct = $_POST["fproduct"];
         
        
 
+        $conn = null;
         
     }
 //}

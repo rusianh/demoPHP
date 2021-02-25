@@ -18,11 +18,11 @@
 </head>
 <body>
     <div class="login-form">
-        <form>
+        <form action="http://aptech.com:83/demoPHP/lab06_practise/validate.php" method="post">
             <h2>Đăng nhập</h2>
             <div>
                 <input type="text" name="fname" class="" placeholder="Tên đăng nhập" required>
-                <input>
+                <input type="password" name="fpassword" class="" placeholder="Password" required>
                 <button>Đăng nhập</button>
             </div>
         </form>

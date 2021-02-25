@@ -2,8 +2,8 @@
 
 function redirect($url, $statusCode = 303)
 {
-   header("Location: ".$url, true, $statusCode);
-   exit();
+   header('Location: ' . $url, true, $statusCode);
+   die();
 }
 
 
@@ -31,7 +31,7 @@ if(isset($_POST['fname']) && isset($_POST['fpassword']))
           
             if($enableLogin)
             {                            
-                redirect("http://aptech.com:83/demoPHP/lab06_mr_lvt/PhpProject1/product.php");
+                redirect("http://localhost:8087/PhpProject1/product.php");
             }
             else
             {
