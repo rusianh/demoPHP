@@ -67,7 +67,7 @@ $fproduct = $_POST["fproduct"];
                 
                 $stmt->execute();
                 echo "New record created successfully";
-                redirect("http://localhost:8087/PhpProject1/product_list.php");
+                redirect("http://aptech.com:83/demoPHP/lab8_session_cookie/PhpProject1/product_list.php");
 
 //                } catch (PDOException $e) {
 //                echo 'PDO Exception: ' . $e->getMessage();
@@ -123,7 +123,7 @@ $fproduct = $_POST["fproduct"];
 </head>
 <body>
 <div class="product-form">
-    <form action="/PhpProject1/product.php" method="post">
+    <form action="http://aptech.com:83/demoPHP/lab8_session_cookie/PhpProject1/product.php" method="post">
         <h2 class="text-center">Sản phẩm</h2>       
         <div class="form-group">
             <input type="text" name="fid" class="form-control" placeholder="ID" value="<?php echo isset($data['fid']) ? $data['fid'] : ''; ?>">            

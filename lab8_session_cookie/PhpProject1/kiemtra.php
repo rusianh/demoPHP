@@ -39,7 +39,7 @@ if(isset($_POST['fname']) && isset($_POST['fpassword']))
           
             if($enableLogin)
             {                            
-                redirect("http://localhost:8087/PhpProject1/product.php");
+                redirect("http://aptech.com:83/demoPHP/lab8_session_cookie/PhpProject1/product.php");
             }
             else
             {
