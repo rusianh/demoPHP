@@ -1,0 +1,19 @@
+<form method="post" action="login.html">
+	<fieldset>
+		<legend>Login Form</legend>
+        
+        <label>Username:</label>
+		<input type="text" name="username" value="" placeholder="Giá trị bị lỗi hiện lại"/>
+		
+		<label>Password:</label>
+		<input type="password" name="password" value="" placeholder="Giá trị bị lỗi hiện lại"/>
+		
+		<br class="clear_float">
+		
+		<button>Login</button>
+	</fieldset>
+
+    <div class="error_msg">
+		Lỗi có thể xảy ra ...
+	</div>
+</form>
